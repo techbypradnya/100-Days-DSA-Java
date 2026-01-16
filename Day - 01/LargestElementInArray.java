@@ -16,11 +16,17 @@ public class LargestElementInArray {
         }
 
         int largest = arr[0];
-        for(int i = 1; i < arr.length; i++){
-            if(arr[i] > largest){
-                largest = arr[i];
+        // for(int i = 1; i < arr.length; i++){
+        //     if(arr[i] > largest){
+        //         largest = arr[i];
+        //     }
+        // }
+        for(int num : arr){ 
+            if(num > largest){
+                largest = num;
             }
         }
+
 
         System.out.println("Largest element in array is: " + largest);
 
